@@ -9,14 +9,10 @@ public class TasksApplication {
 
 	public static void main(String[] args) {
 
-		TaskDto taskDto = new TaskDto((long)1,"Sprzatanie","Mycie, pranie");
-	//	SpringApplication.run(TasksApplication.class, args);
 
-		long id = taskDto.getId();
-		String title = taskDto.getTitle();
-		String content = taskDto.getContent();
+		SpringApplication.run(TasksApplication.class, args);
 
-		System.out.println(id+" "+title+" "+content);
+
 	}
 
 }
