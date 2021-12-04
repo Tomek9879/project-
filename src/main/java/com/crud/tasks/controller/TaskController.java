@@ -15,9 +15,10 @@ import org.springframework.web.bind.annotation.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/v1/task")
+
 public class TaskController {
 
     private final DbService service;
@@ -31,9 +32,10 @@ public class TaskController {
 
 
 
-    @RequestMapping(method = RequestMethod.GET,value = "getTasks")
-    public List<TaskDto> getTasks(){
-        return new ArrayList<>();
+    @RequestMapping(method = RequestMethod.GET, value = "getTasks")
+    public List<TaskDto> getTasks() {
+        List<Task> tasks = service.getAllTasks();
+        return taskMapper.mapToTaskDtoList(tasks);
     }
 
     @RequestMapping(method = RequestMethod.GET,value="getTask")
