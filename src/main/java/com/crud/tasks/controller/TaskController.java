@@ -21,7 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
  public class TaskController {
 
-      private final DbService service;
+       private final DbService service;
      private final TaskMapper taskMapper;
 
      @Autowired
