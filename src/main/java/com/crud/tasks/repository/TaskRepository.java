@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import com.crud.tasks.domain.Task;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+ import java.util.List;
 import java.util.Optional;
 
 @Repository
