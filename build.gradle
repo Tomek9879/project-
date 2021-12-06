@@ -13,7 +13,7 @@ repositories {
 	mavenCentral()
 }
 jar{
-	enabled = false
+	enabled=false;
 }
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -21,7 +21,7 @@ dependencies {
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.6.0'
 
 	runtimeOnly group: 'mysql', name: 'mysql-connector-java', version: '8.0.27'
-	runtimeOnly'org.postgresql:postgresql:42.3.1'
+	runtimeOnly group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
 
 	compileOnly 'org.projectlombok:lombok:1.18.22'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
